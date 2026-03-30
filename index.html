@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spiritual Guidance</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="background-glow"></div>
+
+  <main class="container">
+    <header class="hero">
+      <h1>Spiritual Guidance</h1>
+      <p class="subtitle">Find clarity through timeless wisdom</p>
+    </header>
+
+    <section class="controls-card">
+      <label>Select Text</label>
+      <select id="bookSelect">
+        <option value="gita">Bhagavad Gita</option>
+        <option value="bible">Bible</option>
+        <option value="quran">Quran</option>
+      </select>
+
+      <button id="generateBtn" class="primary-btn">
+        Seek Guidance
+      </button>
+    </section>
+
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>Seeking guidance...</p>
+    </div>
+
+    <section id="resultCard" class="result-card hidden">
+      <div class="result-header">
+        <h2 id="bookName"></h2>
+        <span id="reference"></span>
+      </div>
+
+      <p id="verseText" class="verse"></p>
+
+      <div class="actions">
+        <button id="tryAgain" class="secondary-btn">Try Again</button>
+        <button id="copyBtn" class="secondary-btn">Copy</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    For reflection purposes only
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
