@@ -9,9 +9,19 @@ const bookNameEl = document.getElementById("bookName");
 const referenceEl = document.getElementById("reference");
 const verseTextEl = document.getElementById("verseText");
 
+const cache = {};
+
 async function fetchData(book) {
+  
+  if (cache[book]) {
+    return cache[book];
+  }
+
   const res = await fetch(`data/${book}.json`);
-  return await res.json();
+  const data = await res.json();
+
+  cache[book] = data; 
+  return data;
 }
 
 function getRandomVerse(data) {
