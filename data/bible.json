@@ -1,0 +1,19 @@
+{
+  "book": "Bible",
+  "chapters": [
+    {
+      "chapter": 3,
+      "verses": [
+        "Trust in the Lord with all your heart and lean not on your own understanding.",
+        "In all your ways submit to Him, and He will make your paths straight."
+      ]
+    },
+    {
+      "chapter": 23,
+      "verses": [
+        "The Lord is my shepherd; I shall not want.",
+        "He restores my soul and guides me along the right paths."
+      ]
+    }
+  ]
+}
